@@ -1,14 +1,25 @@
 body{
-    background: gray;
+    background: lightgrey;
     height:auto;
     width: auto;
+    padding-top:5.5%;
 }
+hr{
+    margin-bottom:1%;
+}
+
 .bl-new{
     width:92%;
     margin:0.5%;
 }
+.bl-top{
+    margin-top: 1%;
+    margin-left: 0.5%;
+    margin-right: 1%;
+}
 .bl-list {
-    background: blue;
+    background: whitesmoke;
+    border-radius: 6px;
     margin-left:10%;
     margin-right:10%;
     width:60%;
@@ -17,39 +28,41 @@ body{
 .bl-row{
     width:100%;
     display:inline-block;
+    margin-bottom:1%;
 }
 .bl-product {
-    height:100%;
-    background:red;
+    margin-left:1%;
     width:33%;
     display:inline-block;
 }
 
 .bl-count{
-    height:100%;
-    background:yellow;
+    text-align: center;
     width:33%;
     display:inline-block;
 }
 .bl-minus {
+    border-radius: 100px;
     margin-left: 41.5%;
     background: red;
     opacity:0.5;
 }
 .bl-label {
-    background: #cdcbcb;
+    border-radius: 6px;
+    background: lightgrey;
 }
 .bl-plus {
+    border-radius: 100px;
     background: #04a613;
 }
 
 .bl-buttons{
-    height:100%;
-    background:green;
+    margin-right:1%;
     float:right;
     display:inline-block;
 }
 .bl-delete{
+    border-radius: 100px;
     background:red;
 }
 
@@ -57,9 +70,29 @@ body{
 
 /*Права колонка*/
 
+.bl-title{
+    margin-left:2.5%;
+    margin-top:2.5%;
+}
 .bl-bought {
+    border-radius: 6px;
+    background: whitesmoke;
     float:left;
-    background: red;
     width:10%;
+}
+.bl-name{
+    text-align: center;
+    border-radius: 6px;
+    background: lightgrey;
+    margin:1%;
+}
+.bl-number{
+    border-radius: 100px;
+    background: orange;
+}
+.bl-left{
+    width:100%;
+    margin-left:5%;
+    margin-top:4%;
 }
 
