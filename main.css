@@ -46,8 +46,8 @@ button {
 .bl-list {
     background: whitesmoke;
     border-radius: 6px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 14%;
+    margin-right: 2%;
     width: 55%;
     float: left;
 }
@@ -72,20 +72,34 @@ button {
 
 .bl-minus {
     border-radius: 100px;
+    color:white;
     margin-left: 41.5%;
     background: red;
     opacity: 0.5;
+    padding-top:0.4em;
+    padding-bottom:0.55em;
+    padding-left:0.6em;
+    padding-right:0.6em;
+    font-size:16px;
 }
 
 .bl-label {
     padding: 2%;
     border-radius: 6px;
     background: lightgrey;
+    padding-left:0.6em;
+    padding-right:0.6em;
 }
 
 .bl-plus {
+    color:white;
     border-radius: 100px;
     background: #04a613;
+    padding-top:0.4em;
+    padding-bottom:0.55em;
+    padding-left:0.6em;
+    padding-right:0.6em;
+    font-size:16px;
 }
 
 .bl-buttons {
@@ -95,12 +109,22 @@ button {
 }
 
 .bl-delete {
+    color:white;
     border-radius: 6px;
     background: red;
+    padding-top:0.6em;
+    padding-bottom:0.75em;
+    padding-left:0.8em;
+    padding-right:0.8em;
+    font-size:14px;
 }
 .bl-buy{
     background: lightgrey;
     border-radius: 6px;
+    padding-top:1em;
+    padding-bottom:1.05em;
+    padding-left:1.2em;
+    padding-right:1.2em;
 }
 
 /*Права колонка*/
