@@ -15,8 +15,8 @@ button {
 }
 
 .bl-new {
-    border:1px solid lightgrey;
-    border-right:none;
+    border: 1px solid lightgrey;
+    border-right: none;
     width: 88.8%;
     font-size: 14px;
     height: 25px;
@@ -27,13 +27,11 @@ button {
 }
 
 .bl-create {
-    border:1px solid gray;
+    border: 1px solid gray;
     background: #2185D0;
     color: white;
     font-size: 14px;
-    padding: 0.7%;
-    padding-left:2%;
-    padding-right:2%;
+    padding: 0.7% 2%;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
 }
@@ -73,34 +71,26 @@ button {
 
 .bl-minus {
     border-radius: 100px;
-    color:white;
+    color: white;
     margin-left: 41.5%;
     background: red;
     opacity: 0.5;
-    padding-top:0.4em;
-    padding-bottom:0.55em;
-    padding-left:0.65em;
-    padding-right:0.65em;
-    font-size:16px;
+    padding: 0.4em 0.65em 0.55em;
+    font-size: 16px;
 }
 
 .bl-label {
-    padding: 2%;
     border-radius: 6px;
     background: #E8E8E8;
-    padding-left:0.6em;
-    padding-right:0.6em;
+    padding: 2% 0.6em;
 }
 
 .bl-plus {
-    color:white;
+    color: white;
     border-radius: 100px;
     background: #04a613;
-    padding-top:0.4em;
-    padding-bottom:0.55em;
-    padding-left:0.65em;
-    padding-right:0.65em;
-    font-size:16px;
+    padding: 0.4em 0.65em 0.55em;
+    font-size: 16px;
 }
 
 .bl-buttons {
@@ -110,22 +100,17 @@ button {
 }
 
 .bl-delete {
-    color:white;
+    color: white;
     border-radius: 6px;
     background: red;
-    padding-top:0.55em;
-    padding-bottom:0.7em;
-    padding-left:0.8em;
-    padding-right:0.8em;
-    font-size:14px;
+    padding: 0.55em 0.8em 0.7em;
+    font-size: 14px;
 }
-.bl-buy{
+
+.bl-buy {
     background: #E8E8E8;
     border-radius: 6px;
-    padding-top:1em;
-    padding-bottom:1.05em;
-    padding-left:1.2em;
-    padding-right:1.2em;
+    padding: 1em 1.2em 1.05em;
 }
 
 /*Права колонка*/
@@ -151,10 +136,7 @@ button {
 }
 
 .bl-number {
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-    padding-left: 0.7em;
-    padding-right: 0.7em;
+    padding: 0.3em 0.7em;
     font-size: 10px;
     border-radius: 100px;
     background: #F2711C;
