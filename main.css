@@ -12,6 +12,31 @@ hr {
 
 button {
     border: none;
+    position:relative;
+}
+button::after {
+    font-size:0;
+    padding:25%;
+    opacity:0;
+    width:0;
+    position:absolute;
+    transition:all 0.7s ease;
+    text-align:center;
+    content:attr(data-tooltip);
+    left:50%;
+    border-radius:6px;
+    z-index:10000;
+}
+
+button:hover::after{
+    opacity:1;
+    width:220%;
+    transition:all 0.7s ease;
+    font-size:12px;
+    margin-left:-135%;
+    background:darkviolet;
+    color:white;
+    transform:translate(0,-110%);
 }
 
 .bl-new {
@@ -74,7 +99,6 @@ button {
     color: white;
     margin-left: 41.5%;
     background: red;
-    opacity: 0.5;
     padding: 0.4em 0.65em 0.55em;
     font-size: 16px;
 }
@@ -148,3 +172,71 @@ button {
     margin: 1em;
 }
 
+.badge{
+    transition: transform 1s ease, background 1s ease;
+    width: 10%;
+    height:150px;
+    position:fixed;
+    bottom:-60px;
+    left:1%;
+    background: darkviolet;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: "Times New Roman", serif;
+}
+
+.badge p:first-child{
+    font-size:2em;
+    text-align:center;
+}
+
+.badge p:last-child{
+    margin-left:15%;
+}
+
+.badge:hover{
+    transform:translate(0px,-60px);
+    transition: all 1s ease;
+    background:blue;
+}
+
+@media(max-width:500px){
+    .bl-list{
+        margin:auto;
+        width:100%;
+    }
+
+    .bl-bought{
+        margin:10% auto;
+        width:100%;
+    }
+}
+
+@media print{
+    .badge p:first-child{
+        display: none;
+    }
+
+    .badge{
+        background:white;
+        border:1px darkviolet solid;
+        width:15%;
+    }
+
+    .bl-minus{
+        margin-left:0;
+    }
+
+    button{
+        border:1px gray solid;
+    }
+
+    .bl-number{
+        border: 1px gray solid;
+    }
+
+    .bl-new{
+        width: 79%;
+    }
+}
