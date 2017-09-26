@@ -12,31 +12,32 @@ hr {
 
 button {
     border: none;
-    position:relative;
-}
-button::after {
-    font-size:0;
-    padding:6px;
-    opacity:0;
-    width:0;
-    position:absolute;
-    transition:transform 0.7s ease, all 0.7s ease;
-    text-align:center;
-    content:attr(data-tooltip);
-    left:50%;
-    border-radius:6px;
-    z-index:10000;
+    position: relative;
 }
 
-button:hover::after{
-    opacity:1;
-    width:160px;
-    transition:all 0.7s ease;
-    font-size:12px;
-    margin-left:-86px;
-    background:darkviolet;
-    color:white;
-    transform:translate(0,-130%);
+button::after {
+    font-size: 0;
+    padding: 6px;
+    opacity: 0;
+    width: 0;
+    position: absolute;
+    transition: transform 0.7s ease, all 0.7s ease;
+    text-align: center;
+    content: attr(data-tooltip);
+    left: 50%;
+    border-radius: 6px;
+    z-index: 10000;
+}
+
+button:hover::after {
+    opacity: 1;
+    width: 160px;
+    transition: all 0.7s ease;
+    font-size: 12px;
+    margin-left: -86px;
+    background: darkviolet;
+    color: white;
+    transform: translate(0, -130%);
 }
 
 .bl-new {
@@ -172,72 +173,72 @@ button:hover::after{
     margin: 1em;
 }
 
-.bl-badge{
+.bl-badge {
     transition: transform 1s ease, background 1s ease;
     width: 10%;
-    height:150px;
-    position:fixed;
-    bottom:-60px;
-    left:1%;
+    height: 150px;
+    position: fixed;
+    bottom: -60px;
+    left: 1%;
     background: darkviolet;
     color: white;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     font-family: "Times New Roman", serif;
-    z-index:10001;
+    z-index: 10001;
 }
 
-.bl-badge p:first-child{
-    font-size:2em;
-    text-align:center;
+.bl-badge p:first-child {
+    font-size: 2em;
+    text-align: center;
 }
 
-.bl-badge p:last-child{
-    margin-left:15%;
+.bl-badge p:last-child {
+    margin-left: 15%;
 }
 
-.bl-badge:hover{
-    transform:translate(0px,-60px);
+.bl-badge:hover {
+    transform: translate(0px, -60px);
     transition: all 1s ease;
-    background:blue;
+    background: blue;
 }
 
-@media(max-width:500px){
-    .bl-list{
-        margin:auto;
-        width:100%;
+@media (max-width: 500px) {
+    .bl-list {
+        margin: auto;
+        width: 100%;
     }
 
-    .bl-bought{
-        margin:10% auto;
-        width:100%;
+    .bl-bought {
+        margin: 10% auto;
+        width: 100%;
     }
 }
 
-@media print{
-    .badge p:first-child{
+@media print {
+    .badge p:first-child {
         display: none;
     }
 
-    .badge{
-        background:white;
-        border:1px darkviolet solid;
-        width:15%;
+    .badge {
+        background: white;
+        border: 1px darkviolet solid;
+        width: 15%;
     }
 
-    .bl-minus{
-        margin-left:0;
+    .bl-minus {
+        margin-left: 0;
     }
 
-    button{
-        border:1px gray solid;
-    }
-
-    .bl-number{
+    button {
         border: 1px gray solid;
     }
 
-    .bl-new{
+    .bl-number {
+        border: 1px gray solid;
+    }
+
+    .bl-new {
         width: 79%;
     }
 }
