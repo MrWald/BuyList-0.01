@@ -16,11 +16,11 @@ button {
 }
 button::after {
     font-size:0;
-    padding:25%;
+    padding:6px;
     opacity:0;
     width:0;
     position:absolute;
-    transition:all 0.7s ease;
+    transition:transform 0.7s ease, all 0.7s ease;
     text-align:center;
     content:attr(data-tooltip);
     left:50%;
@@ -30,19 +30,19 @@ button::after {
 
 button:hover::after{
     opacity:1;
-    width:220%;
+    width:160px;
     transition:all 0.7s ease;
     font-size:12px;
-    margin-left:-135%;
+    margin-left:-86px;
     background:darkviolet;
     color:white;
-    transform:translate(0,-110%);
+    transform:translate(0,-130%);
 }
 
 .bl-new {
     border: 1px solid lightgrey;
     border-right: none;
-    width: 88.8%;
+    width: 88.5%;
     font-size: 14px;
     height: 25px;
     margin-right: -0.4%;
@@ -172,7 +172,7 @@ button:hover::after{
     margin: 1em;
 }
 
-.badge{
+.bl-badge{
     transition: transform 1s ease, background 1s ease;
     width: 10%;
     height:150px;
@@ -184,18 +184,19 @@ button:hover::after{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     font-family: "Times New Roman", serif;
+    z-index:10001;
 }
 
-.badge p:first-child{
+.bl-badge p:first-child{
     font-size:2em;
     text-align:center;
 }
 
-.badge p:last-child{
+.bl-badge p:last-child{
     margin-left:15%;
 }
 
-.badge:hover{
+.bl-badge:hover{
     transform:translate(0px,-60px);
     transition: all 1s ease;
     background:blue;
