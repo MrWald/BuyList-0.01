@@ -5,11 +5,6 @@ body {
     padding-top: 5.5%;
 }
 
-hr {
-    opacity: 0.3;
-    margin-bottom: 1%;
-}
-
 button {
     text-align:center;
     border: none;
@@ -17,28 +12,36 @@ button {
 }
 
 button::after {
-    font-size: 0;
+    height:80%;
     padding: 6px;
-    opacity: 0;
-    width: 0;
+    font-size: 0;
+    width:65%;
     position: absolute;
-    transition: transform 0.7s ease, all 0.7s ease;
+    transition: transform 0.7s ease, background 0.7s ease;
     text-align: center;
     content: attr(data-tooltip);
-    left: 50%;
+    left: 0;
     border-radius: 6px;
     z-index: 10000;
 }
 
 button:hover::after {
-    opacity: 1;
-    width: 160px;
-    transition: all 0.7s ease;
-    font-size: 12px;
+    left: 50%;
     margin-left: -86px;
+    font-size: 12px;
+    height:auto;
+    width: 160px;
     background: darkviolet;
     color: white;
     transform: translate(0, -130%);
+}
+
+button[disabled]:hover::after{
+    display:none;
+}
+
+button[disabled]{
+    opacity:0.5;
 }
 
 .bl-new {
@@ -66,9 +69,7 @@ button:hover::after {
 }
 
 .bl-top {
-    margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin: 1%;
 }
 
 .bl-list {
@@ -81,9 +82,11 @@ button:hover::after {
 }
 
 .bl-row {
+    padding-top:1%;
     width: 100%;
     display: inline-block;
     margin-bottom: 1%;
+    border-top:1px lightgray solid;
 }
 
 .bl-product {
@@ -141,6 +144,13 @@ button:hover::after {
     padding: 1em 1.2em 1.05em;
 }
 
+.bl-unbuy{
+    display:none;
+    background: #E8E8E8;
+    border-radius: 6px;
+    padding: 1em 1.2em 1.05em;
+}
+
 /*Права колонка*/
 
 .bl-title {
@@ -154,7 +164,8 @@ button:hover::after {
     width: 15%;
 }
 
-.bl-name {
+.bl-productLeft {
+    display:inline-block;
     padding: 2%;
     font-size: 12px;
     text-align: center;
@@ -171,7 +182,7 @@ button:hover::after {
     color: white;
 }
 
-.bl-left {
+.bl-left, .bl-finished {
     width: 100%;
     margin: 1em;
 }
@@ -197,6 +208,7 @@ button:hover::after {
 }
 
 .bl-badge p:last-child {
+    visibility:hidden;
     margin-left: 15%;
 }
 
@@ -204,6 +216,10 @@ button:hover::after {
     transform: translate(0px, -60px);
     transition: all 1s ease;
     background: blue;
+}
+
+.bl-badge:hover p:last-child {
+    visibility:visible;
 }
 
 @media (max-width: 500px) {
