@@ -154,7 +154,8 @@ button[disabled] {
 /*Права колонка*/
 
 .bl-title {
-    margin: 1em;
+    margin: 5%;
+    width:92%;
 }
 
 .bl-bought {
@@ -183,8 +184,9 @@ button[disabled] {
 }
 
 .bl-left, .bl-finished {
-    width: 100%;
-    margin: 1em;
+    width: 92%;
+    margin: 5%;
+    vertical-align: middle;
 }
 
 .bl-badge {

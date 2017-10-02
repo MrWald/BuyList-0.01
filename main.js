@@ -53,6 +53,7 @@ $(document).ready(function () {
             item.find(".bl-label").css("margin-left", "40.5%");
             item.find(".bl-product").css("margin-top", "0.8%");
             item.find(".bl-count").css("margin-top", "0.8%");
+            item.find(".bl-product").prop("contenteditable", false);
         });
 
         item.find(".bl-unbuy").click(function () {
@@ -66,14 +67,13 @@ $(document).ready(function () {
             item.find(".bl-label").css("margin-left", "auto");
             item.find(".bl-product").css("margin-top", "auto");
             item.find(".bl-count").css("margin-top", "auto");
+            item.find(".bl-product").prop("contenteditable", true);
         });
 
+        item.find(".bl-product").focusout(function () {
+            tile.find(".bl-name").text($(this).text());
+        });
 
-    });
-
-    $(".bl-product").focusout(function () {
-        var tile = $($(ITEM_LEFT).get($(this).index())).find(".bl-name");
-        tile.text($(this).text());
     });
 
     function addItem(title) {
@@ -120,6 +120,7 @@ $(document).ready(function () {
             row.find(".bl-label").css("margin-left", "40.5%");
             row.find(".bl-product").css("margin-top", "0.8%");
             row.find(".bl-count").css("margin-top", "0.8%");
+            row.find(".bl-product").prop("contenteditable", false);
         });
 
         row.find(".bl-unbuy").click(function () {
@@ -133,6 +134,7 @@ $(document).ready(function () {
             row.find(".bl-label").css("margin-left", "auto");
             row.find(".bl-product").css("margin-top", "auto");
             row.find(".bl-count").css("margin-top", "auto");
+            row.find(".bl-product").prop("contenteditable", true);
         });
 
         LIST.append(row);
