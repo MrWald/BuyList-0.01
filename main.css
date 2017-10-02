@@ -6,16 +6,16 @@ body {
 }
 
 button {
-    text-align:center;
+    text-align: center;
     border: none;
     position: relative;
 }
 
 button::after {
-    height:80%;
+    height: 80%;
     padding: 6px;
     font-size: 0;
-    width:65%;
+    width: 65%;
     position: absolute;
     transition: transform 0.7s ease, background 0.7s ease;
     text-align: center;
@@ -29,19 +29,19 @@ button:hover::after {
     left: 50%;
     margin-left: -86px;
     font-size: 12px;
-    height:auto;
+    height: auto;
     width: 160px;
     background: darkviolet;
     color: white;
     transform: translate(0, -130%);
 }
 
-button[disabled]:hover::after{
-    display:none;
+button[disabled]:hover::after {
+    display: none;
 }
 
-button[disabled]{
-    opacity:0.5;
+button[disabled] {
+    opacity: 0.5;
 }
 
 .bl-new {
@@ -57,7 +57,7 @@ button[disabled]{
 }
 
 .bl-create {
-    width:10%;
+    width: 10%;
     border: 1px solid gray;
     background: #2185D0;
     color: white;
@@ -82,11 +82,11 @@ button[disabled]{
 }
 
 .bl-row {
-    padding-top:1%;
+    padding-top: 1%;
     width: 100%;
     display: inline-block;
     margin-bottom: 1%;
-    border-top:1px lightgray solid;
+    border-top: 1px lightgray solid;
 }
 
 .bl-product {
@@ -144,8 +144,8 @@ button[disabled]{
     padding: 1em 1.2em 1.05em;
 }
 
-.bl-unbuy{
-    display:none;
+.bl-unbuy {
+    display: none;
     background: #E8E8E8;
     border-radius: 6px;
     padding: 1em 1.2em 1.05em;
@@ -165,7 +165,7 @@ button[disabled]{
 }
 
 .bl-productLeft {
-    display:inline-block;
+    display: inline-block;
     padding: 2%;
     font-size: 12px;
     text-align: center;
@@ -208,7 +208,7 @@ button[disabled]{
 }
 
 .bl-badge p:last-child {
-    visibility:hidden;
+    visibility: hidden;
     margin-left: 15%;
 }
 
@@ -219,7 +219,7 @@ button[disabled]{
 }
 
 .bl-badge:hover p:last-child {
-    visibility:visible;
+    visibility: visible;
 }
 
 @media (max-width: 500px) {
