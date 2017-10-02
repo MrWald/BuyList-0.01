@@ -9,6 +9,7 @@ button {
     text-align: center;
     border: none;
     position: relative;
+    box-shadow:2px 2px lightgray;
 }
 
 button::after {
@@ -66,6 +67,7 @@ button[disabled] {
     padding-bottom: 0.7%;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
+    box-shadow:2px 2px lightgray;
 }
 
 .bl-top {
@@ -79,6 +81,7 @@ button[disabled] {
     margin-right: 2%;
     width: 55%;
     float: left;
+    box-shadow:4px 4px rgb(140, 140, 140);
 }
 
 .bl-row {
@@ -163,6 +166,7 @@ button[disabled] {
     background: white;
     float: left;
     width: 15%;
+    box-shadow:4px 4px rgb(140, 140, 140);
 }
 
 .bl-productLeft {
