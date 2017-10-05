@@ -158,6 +158,14 @@ $(document).ready(function () {
         var title = name.val().trim();
         if (title !== "") addItem(name.val());
         name.val("");
+        name.focus();
+    });
+
+    name.keydown(function (e) {
+        if (e.keyCode === 13) {
+            create.click();
+            e.preventDefault();
+        }
     });
 });
 
